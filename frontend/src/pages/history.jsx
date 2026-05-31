@@ -179,7 +179,7 @@ function History() {
                       </span>
 
                       <span className="ml-3 text-gray-600">
-                        ({item.confidence}%)
+                         ({(item.confidence * 100).toFixed(2)}%)
                       </span>
 
                     </div>
