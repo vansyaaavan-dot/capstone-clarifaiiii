@@ -18,7 +18,7 @@ app.post('/api/detect-hoax', async (req, res) => {
             return res.status(400).json({ error: "Teks tidak boleh kosong" });
         }
 
-        const fastApiResponse = await axios.post('https://capstonee-clarifai-production.up.railway.app/predict', {
+        const fastApiResponse = await axios.post('capstone-clarifaiiii-production.up.railway.app', {
             text: text
         });
 
