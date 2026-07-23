@@ -9,14 +9,13 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCZlRNCtvjFoKlfFQn-mf01iQ444OKiI2M",
-  authDomain: "clarifai-d8a55.firebaseapp.com",
-  projectId: "clarifai-d8a55",
-  storageBucket: "clarifai-d8a55.firebasestorage.app",
-  messagingSenderId: "905251541746",
-  appId: "1:905251541746:web:4b035728c70ef67f05f66b",
-  measurementId: "G-J2H6V7LXNV"
-};
+    apiKey: "AIzaSyBSgeircGfgsxUVOzh-PoEaV2JaqPSqQoo",
+    authDomain: "clarifai-bbb49.firebaseapp.com",
+    projectId: "clarifai-bbb49",
+    storageBucket: "clarifai-bbb49.firebasestorage.app",
+    messagingSenderId: "103456062559",
+    appId: "1:103456062559:web:76b5b9e9794f22bca1afea"
+  };
 
 const app = initializeApp(firebaseConfig);
 
