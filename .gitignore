@@ -159,3 +159,25 @@ build/
 
 # VS Code
 .vscode/
+# Python
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Jupyter Notebook
+*.ipynb
+
+# Model AI (jika ukurannya besar)
+*.keras
+*.h5
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+!.env.example
