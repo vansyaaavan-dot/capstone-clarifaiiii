@@ -72,48 +72,37 @@ localStorage.setItem(
 
     } catch (error) {
 
-      switch (error.code) {
+  console.log(error.code);
+  console.log(error.message);
+  console.error(error);
 
-        case "auth/user-not-found":
-          alert(
-            "Email belum terdaftar. Silakan daftar akun terlebih dahulu."
-          );
-          break;
+  switch (error.code) {
 
-        case "auth/invalid-credential":
-          alert(
-            "Email atau password salah."
-          );
-          break;
+    case "auth/user-not-found":
+      alert("Email belum terdaftar. Silakan daftar akun terlebih dahulu.");
+      break;
 
-        case "auth/wrong-password":
-          alert(
-            "Password yang dimasukkan salah."
-          );
-          break;
+    case "auth/invalid-credential":
+      alert("Email atau password salah.");
+      break;
 
-        case "auth/invalid-email":
-          alert(
-            "Format email tidak valid."
-          );
-          break;
+    case "auth/wrong-password":
+      alert("Password yang dimasukkan salah.");
+      break;
 
-        case "auth/too-many-requests":
-          alert(
-            "Terlalu banyak percobaan login. Silakan coba lagi beberapa saat."
-          );
-          break;
+    case "auth/invalid-email":
+      alert("Format email tidak valid.");
+      break;
 
-        default:
-          alert(
-            "Login gagal. Periksa email dan password Anda."
-          );
+    case "auth/too-many-requests":
+      alert("Terlalu banyak percobaan login. Silakan coba lagi beberapa saat.");
+      break;
 
-      }
+    default:
+      alert(`${error.code}\n${error.message}`);
+  }
 
-      console.error(error);
-
-    } finally {
+} finally {
 
       setLoading(false);
 
