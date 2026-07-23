@@ -3,7 +3,7 @@ import axios from "axios";
 const API = axios.create({
 
   baseURL:
-    "https://supportive-purpose-production-c40d.up.railway.app",
+    "https://brilliant-spontaneity-production-0fac.up.railway.app/",
 
 });
 
